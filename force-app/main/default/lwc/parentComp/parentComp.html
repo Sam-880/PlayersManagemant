@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Parent to Child Demo" icon-name="standard:account">
+        <lightning-input class="slds-var-p-horizontal_medium"
+                         label="Set Counter"
+                         type="number"
+                         min="0"
+                         max="100000"
+                         value={startNumber}
+                         onchange={handleStartChange}
+        >
+        </lightning-input>
+ <br> 
+        <lightning-button class="slds-var-p-horizontal_medium"
+                          label="Add 100 to Counter"
+                          onclick={handleMaximizeCounter}
+        >
+        </lightning-button>
+        <!-- Call CHild Component -->
+        <c-child-comp counter={startNumber}></c-child-comp>
+
+    </lightning-card>
+</template>

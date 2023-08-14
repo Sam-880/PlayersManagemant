@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        <p>One Way Data Binding : <b>{name}</b></p>
+    </lightning-card><br><br>
+    <lightning-card>
+        <lightning-input name="firstName" label="First name" onchange={handleChange}></lightning-input>
+        <lightning-input name="lastName" label="Last name" onchange={handleChange}></lightning-input>
+        <p>Two Way Data Binding : UpperCase Full Name is<b> {upperCasedFUllName}</b></p>
+    </lightning-card>
+</template>

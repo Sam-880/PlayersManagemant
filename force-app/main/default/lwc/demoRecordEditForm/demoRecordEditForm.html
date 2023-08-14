@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Demo Record Edit Form Example">
+        <lightning-record-edit-form 
+        object-api-name={objectName}
+        fields={fieldName}
+        onsuccess={successHAndler} 
+        >
+        <lightning-input-field field-name="Name"></lightning-input-field>
+        <lightning-input-field field-name="AccountNumber"></lightning-input-field>
+        <lightning-input-field field-name="Site"></lightning-input-field>
+        <lightning-input-field field-name="BillingAddress"></lightning-input-field>
+        <lightning-button type="submit" name="submit" label="Save Record"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
